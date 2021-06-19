@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
             fprintf(2, "child process failed to read ball\n");
             exit(1);
         }
-        fprintf(2, "%d: reveived ping %c\n", getpid(), pingpong);
+        fprintf(2, "%d: reveived ping %c\n", getpid(), pingpong); // 子进程用的2，父进程用的1。为啥嘞？
         write(child2parent[1], &pingpong, 1);
 
         close(child2parent[W]);
