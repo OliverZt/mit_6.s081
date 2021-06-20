@@ -15,6 +15,10 @@ ctrl-p
 ctrl-a x
 
 ```
+## 遗留问题
+
+* fork()创建子程序后，子程序和父程序如何共享程序段的？
+    参考代码 ./user/fork_test.c
 
 ## Core Concepts
 
@@ -97,3 +101,12 @@ system call:
 ./user/primes_example.c
 
 ![](./note_picture/primes.png)
+
+### find - moderate - ing
+ 
+Look at user/ls.c to see how to read directories.  
+./user/find.c  
+
+### xargs - moderate - ing
+
+./user/xargs.c

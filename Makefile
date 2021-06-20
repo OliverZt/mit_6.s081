@@ -153,6 +153,9 @@ UPROGS=\
 	$U/_pingpong\
 	$U/_primes\
 	$U/_primes_example\
+	$U/_fork_test\
+	$U/_find\
+	$U/_find_example\
 
 
 ifeq ($(LAB),syscall)

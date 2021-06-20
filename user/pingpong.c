@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
         close(child2parent[W]);
         close(parent2child[R]);
-        exit(0);
+        // exit(0);
     } else { // parent
         close(child2parent[W]);
         close(parent2child[R]);
@@ -55,7 +55,9 @@ int main(int argc, char *argv[])
         wait(0);
         close(child2parent[R]);
         close(parent2child[W]);
-        exit(0);
+        // exit(0);
     }
+    printf("1");
+    exit(0);
 
 }
