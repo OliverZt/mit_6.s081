@@ -1,6 +1,7 @@
 struct stat;
 struct rtcdate;
 
+// 此部分声明了用户态可以调用的system calls
 // system calls
 int fork(void);
 int exit(int) __attribute__((noreturn));
@@ -23,6 +24,8 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+// add trace
+int trace(int);
 
 // ulib.c
 int stat(const char*, struct stat*);

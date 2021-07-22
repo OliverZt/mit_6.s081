@@ -3,8 +3,10 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
+// argc:  传入参数的总数量 trace 32 grep hello README 是五个参数
+// argv[]:五个参数的字符串
 int
-main(int argc, char *argv[])
+main(int argc, char *argv[]) 
 {
   int i;
   char *nargv[MAXARG];
