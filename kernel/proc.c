@@ -697,7 +697,8 @@ procdump(void)
   }
 }
 
-uint64 free_proc(void) {
+uint64 
+nproc(void) {
   uint64 n = 0;
   struct proc *p;
   for(p = proc; p < &proc[NPROC]; p++) {
@@ -707,3 +708,4 @@ uint64 free_proc(void) {
   }
   return n;
 }
+

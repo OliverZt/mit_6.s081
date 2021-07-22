@@ -106,6 +106,8 @@ extern uint64 sys_write(void);
 extern uint64 sys_uptime(void);
 // add trace
 extern uint64 sys_trace(void);
+// add sysinfo
+extern uint64 sys_sysinfo(void);
 
 // 函数指针数组
 static uint64 (*syscalls[])(void) = {
@@ -132,6 +134,7 @@ static uint64 (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 // add trace
 [SYS_trace]   sys_trace,
+[SYS_sysinfo] sys_sysinfo,
 };
 
 
@@ -158,6 +161,7 @@ static char *sysname[] = {
 [SYS_mkdir]   "mkdir",
 [SYS_close]   "close",
 [SYS_trace]   "trace",
+[SYS_trace]   "sysinfo",
 };
 
 void
